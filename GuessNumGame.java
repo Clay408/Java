@@ -21,9 +21,7 @@ public class GuessNumGame {
         //整体+1，相当于整个区间向右移动一个单位，所以范围变成了[1,100]，两边都能取到。
         int randomNum = new Random().nextInt(100)+1;//产生随机数字
         Scanner sc = new Scanner(System.in);
-
-        int count = 0;
-
+        int count = 0;//计数器初始化；
         while (true){//死循环
             System.out.println("请输入一个数字");
             int guessNum = sc.nextInt();//获取玩家输入的数字
